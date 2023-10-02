@@ -1,0 +1,21 @@
+:root {
+    --Color-primary-1: #FD377E;
+    --Color-primary-2: #E34981;
+    --Color-secondary: #03B898;
+
+    --Color-grey-1: #F8F9FA;
+    --Color-grey-2: #E9ECEF;
+    --Color-grey-3: #868E96;
+    --Color-grey-4: #212529;
+}
+
+.dark-mode:root {
+    --Color-primary-1: #FD377E;
+    --Color-primary-2: #E34981;
+    --Color-secondary: #03B898;
+
+    --Color-grey-4: #F8F9FA;
+    --Color-grey-3: #E9ECEF;
+    --Color-grey-2: #868E96;
+    --Color-grey-1: #212529;
+}

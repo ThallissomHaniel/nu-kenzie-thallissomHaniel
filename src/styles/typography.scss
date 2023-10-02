@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Nunito&family=Pacifico&family=Poppins&display=swap');
+
+.title1 {
+    color: var(--Color-grey-4);
+    font-family: Nunito;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 48px;
+}
+
+.title2 {
+    color: var(--Color-grey-4);
+    font-family: Nunito;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 34px;
+}
+
+.title3 {
+    color: var(--Color-grey-4);
+    font-family: Nunito;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.title4 {
+    color: var(--Color-grey-4);
+    font-family: Nunito;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+}
+
+.headline {
+    color: var(--Color-grey-3);
+    font-family: Nunito;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+body {
+    color: var(--Color-grey-3);
+    font-family: Nunito;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (min-width: 780px) {
+    main {
+        margin: 39px auto;
+    }
+}
