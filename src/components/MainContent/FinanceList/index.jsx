@@ -1,24 +1,14 @@
 import styles from "./FinanceList.module.scss";
 
 export const FinanceList = ({ financeList, removeList }) => {
-    const p = document.querySelector(".title2");
-    financeList.map((list) => {
-        const { description, value} = list;
-        if(description && value) {
-            p.classList.add("hidden");
-        } else {
-            p.classList.remove("hidden");           
-        }
-    })
-    
+
     return (
-        <>
             <ul className={styles.ul}>
                 <h3 className="title3">Resumo financeiro</h3>
-                <p className="title2">Você ainda não possui nenhum lançamento</p>
+                <p className={`title2 ${financeList.length !== 0 && "hidden"}`} >Você ainda não possui nenhum lançamento</p>
                 {financeList.map((list) => {
                     const { description, value, id, valueType } = list;
-                    const formatedValue = Number(value)
+                    const formatedValue = Number(value);
                     return description && value !== "" ? (
                         <li key={id} className={valueType === "entry" ? styles.entry : styles.output}>
                             <div className={styles.divs}>
@@ -30,10 +20,9 @@ export const FinanceList = ({ financeList, removeList }) => {
                                 <button onClick={() => removeList(id)}>Excluir</button>
                             </div>
                         </li>
-                    ) :  null;
+                    ) : null;
                 })}
             </ul>
-        </>
     );
 };
 

@@ -29,7 +29,7 @@ export const FinanceForm = ({addList}) => {
 
             <div>
                 <label htmlFor="value">Valor(R$)</label>
-                <input type="text" name="value" id="value" value={value} placeholder="Digite aqui o valor"
+                <input type="number" name="value" id="value" value={value} placeholder="Digite aqui o valor"
                 onChange={(e) => setValue(e.target.value)}/>
             </div>
 
