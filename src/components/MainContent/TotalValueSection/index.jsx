@@ -19,11 +19,13 @@ export const TotalvalueSection = ({ financeList }) => {
         return prevValue + Number(list.value);
     },0);
 
+    const totalSum = addValue - subtract
+
     return (
-        <section className={styles.section}>
+        <section className={`${styles.section} ${totalSum === 0 && "hidden"}`}>
             <div>
                 <h3 className='title3'>Valor total:</h3>
-                <p className='title3'><span>R$: {addValue - subtract}</span></p>
+                <p className='title3'><span>{totalSum.toLocaleString("pt-BR", {style:"currency", currency:"BRL"})}</span></p>
             </div>
             <p>O valor se refere ao saldo</p>
         </section>
