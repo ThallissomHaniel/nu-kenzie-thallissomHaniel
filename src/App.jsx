@@ -14,7 +14,6 @@ function App() {
     const id = crypto.randomUUID();
     const newList = { description, value, id, valueType };
     setFinanceList([...financeList, newList]);
-    // console.log(financeList);
   }
 
   const removeList = (id) => {
