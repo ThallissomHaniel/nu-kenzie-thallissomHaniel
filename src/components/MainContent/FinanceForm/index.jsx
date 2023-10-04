@@ -5,7 +5,6 @@ export const FinanceForm = ({addList}) => {
     const [description, setDescription] = useState("");
     const [value, setValue] = useState("");
     const [valueType, setValueType] = useState("entry");
-    // console.log(valueType);
 
     const submit = (e) => {
         e.preventDefault();
@@ -17,7 +16,6 @@ export const FinanceForm = ({addList}) => {
         }
     }
 
-    // console.log(value);
     return (
         <form onSubmit={submit} className={styles.form}>
             <div>

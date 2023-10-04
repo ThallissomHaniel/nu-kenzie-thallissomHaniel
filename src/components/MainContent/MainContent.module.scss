@@ -4,9 +4,33 @@
     flex-wrap: wrap;
 }
 
-@media (min-width: 390px) and (max-width: 1360px) {
+@media (min-width: 501px) {
     .main {
-        justify-content: center;
+        margin: 0 50px;
+    }
+}
+
+@media (min-width: 601px) {
+    .main {
+        margin: 0 100px;
+    }
+}
+
+@media (min-width: 701px) {
+    .main {
+        margin: 0 150px;
+    }
+}
+
+@media (min-width: 768px) {
+    .main {
+        margin: 0 200px;
+    }
+}
+
+@media (min-width: 780px) {
+    .main {
+        margin: 0;
     }
 }
 
